@@ -1,0 +1,75 @@
+@font-face {
+  font-family: Roboto;
+  src: url("Roboto-Medium.19bc029f.ttf");
+  font-weight: 500;
+}
+
+:root {
+  --color-ref: #00acdc;
+}
+
+body {
+  background-color: #fff;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  padding: 0 50px;
+  display: flex;
+}
+
+.header__logo {
+  height: 40px;
+}
+
+.navigation {
+  height: 60px;
+}
+
+.navigation .navigation__list {
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.navigation .navigation__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.navigation .navigation__item:first-child {
+  color: var(--color-ref);
+}
+
+.navigation .navigation__item .navigation__link {
+  color: inherit;
+  text-transform: uppercase;
+  height: 100%;
+  font-size: 12px;
+  line-height: 60px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.navigation .navigation__link:hover, .is-active {
+  color: var(--color-ref);
+}
+
+.is-active:after {
+  content: "";
+  background-color: var(--color-ref);
+  border-radius: 8px;
+  width: 100%;
+  height: 4px;
+  display: flex;
+  position: absolute;
+  top: 56px;
+}
+/*# sourceMappingURL=index.2cdaf7bc.css.map */
